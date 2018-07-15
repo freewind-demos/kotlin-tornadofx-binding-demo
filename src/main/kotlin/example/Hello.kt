@@ -1,21 +1,20 @@
 package example
 
-import javafx.geometry.Pos
 import tornadofx.*
 
 class HelloWorld : View() {
-    override val root = hbox {
-        label("Hello world")
+    override val root = vbox {
+        val field1 = textfield()
+        val field2 = textfield()
+        field2.bind(field1.textProperty())
     }
 }
 
 class HelloWorldStyle : Stylesheet() {
     init {
         root {
-            prefWidth = 400.px
-            prefHeight = 400.px
-            alignment = Pos.CENTER
-            fontSize = 50.px
+            prefWidth = 200.px
+            prefHeight = 300.px
         }
     }
 }

@@ -1,6 +1,6 @@
-Kotlin TornadoFx (JavaFx) Demo
-===============================
+Kotlin TornadoFx (JavaFx) Binding Demo
+======================================
 
-A simple "Hello world" demo for TornadoFX.
+Bind two textfields.
 
 Run `Hello.kt` from your IDE.
